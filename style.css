@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Fruktur&family=Josefin+Sans&family=Poppins:wght@500;800&family=Quicksand:wght@300&display=swap');
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #3a3abb23;
+}
+body::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#ff0e0e ,#ffc107);
+    clip-path: circle(35% at 9% 20%);
+    /* clip-path: square(35% at 9% 20%); */
+}
+body::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#ffffff ,#ff0040);
+    clip-path: circle(35% at 90% 90%);
+}
+table{
+    margin: auto;
+    margin-top: 30px;
+   
+}
+input{
+    font-size: 30px;
+    height: 70px;
+    background: transparent;
+    border: none;
+}
+button{
+    font-size: 23px;
+    background: rgba(173, 172, 172, 0.157);
+    border: none;
+    width: 60px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+    transition: 0s;
+   
+}
+.calculator table tr .clear{
+    color: rgb(0, 0, 0);
+    background: rgb(238, 175, 3);
+}
+.calculator table tr .Equal{
+    color: rgb(255, 255, 255);
+    background: rgb(27, 3, 238);
+}
+.calculator table tr .per{
+    color: rgb(0, 0, 0);
+    background: rgb(186, 250, 8);
+}
+.calculator table tr .divide{
+    color: rgb(0, 0, 0);
+    background: rgb(82, 192, 243);
+}
+.calculator table tr .mul{
+    color: rgb(0, 0, 0);
+    background: rgb(3, 238, 218);
+}
+.calculator table tr .subtr{
+    color: rgb(0, 0, 0);
+    background: rgb(238, 38, 3);
+}
+.calculator table tr .plus{
+    color: rgb(0, 0, 0);
+    background: rgb(0, 255, 128);
+}
+button:hover{
+    background: rgba(255, 0, 55, 0.65);
+}
+
+.container{
+   
+      position: relative;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 15px;
+      overflow: hidden;
+      z-index: 10;
+      backdrop-filter: blur(15000px);
+      border-top: 1px solid rgba(255, 255, 255, 0.2);
+      border-left: 1px solid rgba(255, 255, 255, 0.2);
+      box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.602);
+      
+}
+.calculator{
+    margin-bottom: 45px;
+    display: inline-block;
+    /* background-color: rgb(172, 89, 144); */
+    /* padding: 30px; */
+    /* border-radius: 23px; */
+    /* box-shadow: red; */
+}
+.title {
+    position: relative;
+    top: 74px;
+    background: yellow;
+   
+    height: 30px;
+}
+.title h2{
+    position: relative;
+    left: 129px;
+    font-size: 22px;
+    font-family: 'Fruktur', cursive;
+    top: 2px;
+}
+.img-fluid {
+    width: 26px;
+    position: relative;
+    left: 100px;
+    top: 47px;
+}
